@@ -9,17 +9,24 @@
     <title>Whale Tech - Personal Website</title>
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <style>
+        :root {
+            --background-color: #17191A;
+            --text-color: white;
+            --header-background-color: #965E11;
+            --border-color: #ddd;
+        }
         body {
-            background-color: #17191A;
-            color: white;
+            background-color: var(--background-color);
+            color: var(--text-color);
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
             text-align: left;
+            transition: background-color 0.3s, color 0.3s;
         }
         header {
-            background-color: #965E11;
+            background-color: var(--header-background-color);
             color: #fff;
             padding: 10px 0;
             text-align: center;
@@ -38,7 +45,7 @@
             margin-bottom: 20px;
         }
         .link-buttons {
-            border-top: 1px solid #ddd;
+            border-top: 1px solid var(--border-color);
             padding-top: 20px;
             text-align: center;
             margin-top: 20px;
@@ -77,18 +84,34 @@
             background-color: #041722;
         }
         .projects {
-            border-top: 1px solid #ddd;
+            border-top: 1px solid var(--border-color);
         }
         .changelog ul {
             list-style-type: disc;
             padding-left: 20px;
         }
         .changelog h2 {
-            border-top: 1px solid #ddd;
+            border-top: 1px solid var(--border-color);
             padding-top: 20px;
             margin-top: 0;
         }
         .about {
+        }
+        .theme-toggle {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .theme-toggle button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #0073e6;
+            color: #fff;
+            transition: background-color 0.3s;
+        }
+        .theme-toggle button:hover {
+            background-color: #005bb5;
         }
     </style>
 </head>
@@ -97,6 +120,9 @@
         <h1>Whale Tech</h1>
     </header>
     <div class="container">
+        <div class="theme-toggle">
+            <button onclick="toggleTheme()">Toggle Dark/Light Theme</button>
+        </div>
         <section id="about" class="about">
             <h2>About</h2>
             <div class="profile">
@@ -122,15 +148,32 @@
                 <li><strong>June 20, 2024</strong>: Added GitHub button.</li>
                 <li><strong>June 27, 2024</strong>: Added Steam button.</li>
                 <li><strong>July 11, 2024</strong>: Added screen-reader support, and hover effects.</li>
+                <li><strong>July 11, 2024</strong>: Added some CSS and JS.</li>
             </ul>
         </section>
 
         <div class="link-buttons">
-            <a href="https://youtube.com/@whaletech07" target="_blank" class="youtube-button">YouTube</a>
+            <a href="https://youtube.com/@WhaleTech07" target="_blank" class="youtube-button">YouTube</a>
             <a href="mailto:whaletech07@outlook.com" class="email-button">Email</a>
             <a href="https://github.com/whaletech07" target="_blank" class="github-button">GitHub</a>
             <a href="https://steamcommunity.com/id/whaletech07" target="_blank" class="steam-button">Steam</a>
         </div>
     </div>
+    <script>
+        function toggleTheme() {
+            const root = document.documentElement;
+            if (root.style.getPropertyValue('--background-color') === '#17191A') {
+                root.style.setProperty('--background-color', '#FFFFFF');
+                root.style.setProperty('--text-color', '#000000');
+                root.style.setProperty('--header-background-color', '#FFD700');
+                root.style.setProperty('--border-color', '#000000');
+            } else {
+                root.style.setProperty('--background-color', '#17191A');
+                root.style.setProperty('--text-color', '#FFFFFF');
+                root.style.setProperty('--header-background-color', '#965E11');
+                root.style.setProperty('--border-color', '#ddd');
+            }
+        }
+    </script>
 </body>
 </html>
