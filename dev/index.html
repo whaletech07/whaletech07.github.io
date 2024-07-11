@@ -1,8 +1,11 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Whale Tech - Personal Website">
+    <meta name="keywords" content="Whale Tech, personal website, projects, tech">
+    <meta name="author" content="Whale Tech">
     <title>Whale Tech - Personal Website</title>
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <style>
@@ -47,18 +50,31 @@
             text-decoration: none;
             border-radius: 5px;
             margin: 0 5px;
+            transition: background-color 0.3s ease;
         }
         .youtube-button {
             background-color: #c4302b;
         }
+        .youtube-button:hover {
+            background-color: #a32222;
+        }
         .email-button {
             background-color: #0073e6;
+        }
+        .email-button:hover {
+            background-color: #005bb5;
         }
         .github-button {
             background-color: #000000;
         }
+        .github-button:hover {
+            background-color: #333333;
+        }
         .steam-button {
             background-color: #061D2B;
+        }
+        .steam-button:hover {
+            background-color: #041722;
         }
         .projects {
             border-top: 1px solid #ddd;
@@ -84,7 +100,7 @@
         <section id="about" class="about">
             <h2>About</h2>
             <div class="profile">
-                <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+                <img src="profile.jpg" alt="Profile Picture of Whale Tech" class="profile-pic">
                 <p>Hey! I'm <strong>Whale Tech</strong>, and this is my personal website. This is still a work-in-progress, so don't expect much.</p>
             </div>
         </section>
@@ -105,14 +121,15 @@
                 <li><strong>June 20, 2024</strong>: Relocated the website to github.io.</li>
                 <li><strong>June 20, 2024</strong>: Added GitHub button.</li>
                 <li><strong>June 27, 2024</strong>: Added Steam button.</li>
+                <li><strong>July 11, 2024</strong>: Added screen-reader support, and hover effects.</li>
             </ul>
         </section>
 
         <div class="link-buttons">
-            <a href="https://youtube.com/@WhaleTech07" target="_blank" class="youtube-button">YouTube</a>
+            <a href="https://youtube.com/@whaletech07" target="_blank" class="youtube-button">YouTube</a>
             <a href="mailto:whaletech07@outlook.com" class="email-button">Email</a>
-            <a href="https://github.com/whaletech07" class="github-button">GitHub</a>
-            <a href="https://steamcommunity.com/id/whaletech07" class="steam-button">Steam</a>
+            <a href="https://github.com/whaletech07" target="_blank" class="github-button">GitHub</a>
+            <a href="https://steamcommunity.com/id/whaletech07" target="_blank" class="steam-button">Steam</a>
         </div>
     </div>
 </body>
