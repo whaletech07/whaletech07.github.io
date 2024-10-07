@@ -1,3 +1,3 @@
-# Whale Tech Website
+# Whale Tech Website (Old Version)
 
-The Whale Tech website, previously found at 149.241.145.143, now re-located to GitHub!
+This is the version of the website before my website overhaul on 07/10/2024 (7th October 2024).
