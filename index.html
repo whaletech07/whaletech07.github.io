@@ -3,183 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Whale Tech - Personal Website">
-    <meta name="keywords" content="Whale Tech, personal website, projects, tech">
-    <meta name="author" content="Whale Tech">
-    <title>Whale Tech - Personal Website</title>
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-    <style>
-        :root {
-            --background-color: #17191A;
-            --text-color: white;
-            --header-background-color: #965E11;
-            --border-color: #ddd;
-        }
-        body {
-            background-color: var(--background-color);
-            color: var(--text-color);
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            text-align: left;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        header {
-            background-color: var(--header-background-color);
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-            position: relative;
-        }
-        .theme-toggle {
-            position: absolute;
-            top: 10px;
-            right: 20px;
-        }
-        .theme-toggle img {
-            width: 30px;
-            height: 30px;
-            cursor: pointer;
-            transition: transform 0.3s;
-        }
-        .theme-toggle img:hover {
-            transform: scale(1.1);
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-        section {
-            margin-bottom: 20px;
-        }
-        .profile-pic {
-            max-width: 150px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-        .link-buttons {
-            border-top: 1px solid var(--border-color);
-            padding-top: 20px;
-            text-align: center;
-            margin-top: 20px;
-        }
-        .link-buttons a {
-            display: inline-block;
-            padding: 10px 20px;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            margin: 0 5px;
-            transition: background-color 0.3s ease;
-        }
-        .youtube-button {
-            background-color: #c4302b;
-        }
-        .youtube-button:hover {
-            background-color: #a32222;
-        }
-        .email-button {
-            background-color: #0073e6;
-        }
-        .email-button:hover {
-            background-color: #005bb5;
-        }
-        .github-button {
-            background-color: #000000;
-        }
-        .github-button:hover {
-            background-color: #333333;
-        }
-        .steam-button {
-            background-color: #061D2B;
-        }
-        .steam-button:hover {
-            background-color: #041722;
-        }
-        .projects {
-            border-top: 1px solid var(--border-color);
-        }
-        .changelog ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        .changelog h2 {
-            border-top: 1px solid var(--border-color);
-            padding-top: 20px;
-            margin-top: 0;
-        }
-        .about {
-        }
-    </style>
+    <title>Personal Website</title>
+    <!-- Link the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="images/logo.jpg" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <h1>Whale Tech</h1>
-        <div class="theme-toggle">
-            <img src="images/light.svg" alt="Switch to dark theme" id="theme-icon" onclick="toggleTheme()">
-        </div>
-    </header>
     <div class="container">
-        <section id="about" class="about">
-            <h2>About</h2>
-            <div class="profile">
-                <img src="images/profile.jpg" alt="Profile Picture of Whale Tech" class="profile-pic">
+        <header id="header">
+            Whale Tech
+        </header>
+
+        <main>
+            <!-- Home Section -->
+            <section id="bio" class="bio">
                 <p>Hey! I'm <strong>Whale Tech</strong>, and this is my personal website. This is still a work-in-progress, so don't expect much.</p>
-            </div>
-        </section>
+            </section>
 
-        <section id="projects" class="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Whale Tech Website</h3>
-                <p>This website is a work-in-progress, I'll work on it if I have time!</p>
-            </div>
-        </section>
+            <!-- About Section -->
+            <section id="about" class="about">
+                <h2>About Me</h2>
+                <p>I'm a passionate tech creator who likes messing with operating systems, and computers in general.</p>
+            </section>
+        </main>
 
-        <section id="changelog" class="changelog">
-            <h2>Changelog</h2>
-            <ul>
-                <li><strong>June 15, 2024</strong>: Added changelog.</li>
-                <li><strong>June 15, 2024</strong>: Modified borders.</li>
-                <li><strong>June 20, 2024</strong>: Relocated the website to github.io.</li>
-                <li><strong>June 20, 2024</strong>: Added GitHub button.</li>
-                <li><strong>June 27, 2024</strong>: Added Steam button.</li>
-                <li><strong>July 11, 2024</strong>: Added screen-reader support, and hover effects.</li>
-                <li><strong>July 11, 2024</strong>: Added some CSS and JS.</li>
-                <li><strong>July 12, 2024</strong>: Modified the theme switcher to use an SVG icon.</li>
-                <li><strong>September 7, 2024</strong>: Modified the email button to use a different address.</li>
+        <!-- Contact Section -->
+        <footer id="contact" class="footer">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, feel free to reach out via email or through any of my social media profiles.</p>
+
+            <!-- Social Media Icons -->
+            <ul class="social-icons">
+                <li><a href="https://youtube.com/@whaletech07" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://github.com/whaletech07" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://steamcommunity.com/id/whaletech07" target="_blank"><i class="fab fa-steam"></i></a></li>
+                <li><a href="https://soundcloud.com/whaletech07" target="_blank"><i class="fab fa-soundcloud"></i></a></li>
+                <li><a href="mailto:whaletech07@disroot.org"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="https://discord.gg/Zw4ZgVxQ" target="_blank"><i class="fab fa-discord"></i></a></li>
             </ul>
-        </section>
-
-        <div class="link-buttons">
-            <a href="https://youtube.com/@whaletech07" target="_blank" class="youtube-button">YouTube</a>
-            <a href="mailto:whaletech07@disroot.org" class="email-button">Email</a>
-            <a href="https://github.com/whaletech07" target="_blank" class="github-button">GitHub</a>
-            <a href="https://steamcommunity.com/id/whaletech07" target="_blank" class="steam-button">Steam</a>
-        </div>
+        </footer>
     </div>
-    <script>
-        function toggleTheme() {
-            const root = document.documentElement;
-            const themeIcon = document.getElementById('theme-icon');
-            if (root.style.getPropertyValue('--background-color') === '#17191A') {
-                root.style.setProperty('--background-color', '#FFFFFF');
-                root.style.setProperty('--text-color', '#000000');
-                root.style.setProperty('--header-background-color', '#FFD700');
-                root.style.setProperty('--border-color', '#000000');
-                themeIcon.src = 'images/dark.svg';
-                themeIcon.alt = 'Switch to light theme';
-            } else {
-                root.style.setProperty('--background-color', '#17191A');
-                root.style.setProperty('--text-color', '#FFFFFF');
-                root.style.setProperty('--header-background-color', '#965E11');
-                root.style.setProperty('--border-color', '#ddd');
-                themeIcon.src = 'images/light.svg';
-                themeIcon.alt = 'Switch to dark theme';
-            }
-        }
-    </script>
+
+    <!-- Link the external JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
