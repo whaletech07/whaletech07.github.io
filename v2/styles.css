@@ -1,0 +1,117 @@
+html, body {
+    height: 100%; /* Make sure html and body stretch to full height */
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #955D10, #664A22);
+    color: #fff;
+    scroll-behavior: smooth;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between content and footer */
+    /* min-height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Maximum width for content */
+    padding: 20px;
+    text-align: center; /* Center the text */
+}
+header {
+    padding: 50px 0;
+    font-size: 48px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+nav {
+    margin: 20px 0;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
+}
+.bio {
+    font-size: 24px;
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s forwards 0.5s;
+}
+.about {
+    font-size: 20px;
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s forwards 1.5s;
+}
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.project {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 300px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease;
+}
+.project img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.footer {
+    margin-top: 50px;
+    font-size: 14px;
+    opacity: 0;
+    animation: fadeInUp 1s forwards 2.5s;
+}
+.social-icons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.social-icons li {
+    margin: 0 15px;
+}
+.social-icons li a {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+.social-icons li a:hover {
+    color: #f1c40f;
+}
+/* Animations */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Sticky header effect */
+.sticky {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}

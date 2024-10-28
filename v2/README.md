@@ -1,3 +1,3 @@
-# Whale Tech Website (Version 2)
+# Whale Tech Website
 
-The second version of the Whale Tech website. First published on 2024/10/07, and replaced by Version 3 on 2024/10/28.
+Whale Tech's personal website, now on GitHub!
