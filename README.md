@@ -1,3 +1,3 @@
-# Whale Tech Website (Old Version)
+# Whale Tech Website (Old Versions)
 
-This is the version of the website before my website overhaul on 07/10/2024 (7th October 2024).
+All old versions of the Whale Tech website.
